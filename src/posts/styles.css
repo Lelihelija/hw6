@@ -1,5 +1,5 @@
 .posts-wrapper {
-  background-color:  #papayawhip;
+  background-color:papayawhip;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,9 +71,9 @@
     stroke: cornflowerblue;
 }
 
-.icon:active  {
+/* .icon:active  {
     fill: chocolate;
-}
+} */
 
 .posts-interaction-wrapper {
     display: flex;
