@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import Posts from './posts/posts.js'
-import store from './redux/redux-store.js';
+
 
 function App() {
-  return (
-    <div className="App">
-      <Posts/>
-    </div>
-  );
+  	return (
+		<div className="App">
+			<Posts/>
+		</div>
+  	);
 }
 
 export default App;

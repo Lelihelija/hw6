@@ -1,10 +1,14 @@
 import React from 'react';
 import './styles.css';
 
-
+import CommentsIcon from '../images/chat.svg';
+import SharesIcon from '../images/reload.svg';
+import LikesIcon from '../images/heart.svg';
+import DownloadsIcon from '../images/download.svg';
 
 
 const Post  = ({name, photo, nickname, content, image, date, comments, shares, likes, downloads}) => {
+    
     return (
         <div className="post-wrapper">
             <div className="author">
@@ -17,19 +21,19 @@ const Post  = ({name, photo, nickname, content, image, date, comments, shares, l
                      </div>
                     <div className="posts-interaction-wrapper">
                         <div className="posts-interaction-comments posts-interaction-items">
-                            <img src={comments.src} className="comment-icon icon" alt="comment icon"/>
+                            <img src={CommentsIcon} className="comment-icon icon" alt="comment icon"/>
                             {comments.quantity}
                         </div>
                         <div className="posts-interaction-share posts-interaction-items">
-                            <img src={shares.src} className="share-icon icon" alt="share icon"/>
+                            <img src={SharesIcon} className="share-icon icon" alt="share icon"/>
                             {shares.quantity}
                         </div>
-                        <div className="posts-interaction-likes">
-                            <img src={likes.src} className="likes-icon icon posts-interaction-items" alt="likes icon"/>
+                        <div className="posts-interaction-likes posts-interaction-items">
+                            <img src={LikesIcon} className="likes-icon icon posts-interaction-items" alt="likes icon"/>
                             {likes.quantity}
                         </div>
                         <div className="posts-interaction-download posts-interaction-items">
-                            <img src={downloads.src} className="download-icon icon" alt="download icon"/>
+                            <img src={DownloadsIcon} className="download-icon icon" alt="download icon"/>
                             {downloads.quantity}
                         </div>
                     </div> 
